@@ -1,0 +1,78 @@
+window:
+  padding:
+    x: 0
+    y: 0
+  class:
+    instance: Alacritty
+    general: Alacritty
+  opacity: 0.7
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+# Cursor
+cursor:
+  style:
+    # shape: underline
+    blinking: On
+
+font:
+  normal:
+    family: JetBrainsMono
+    style: Regular
+  bold:
+    family: JetBrainsMono
+    style: Bold
+  italic:
+    family: JetBrainsMono
+    style: Italic
+  bold_italic:
+    family: JetBrainsMono
+    style: Bold Italic
+  size: 10
+draw_bold_text_with_bright_colors: true
+
+import:
+  - ~/.config/alacritty/catppuccin-mocha.yml
+
+selection:
+  save_to_clipboard: true
+
+shell:
+  program: /usr/bin/fish
+
+key_bindings:
+  - {
+      key: Return,
+      mods: Super|Shift,
+      action: SpawnNewInstance
+    }
+colors:
+  name: Brewer (dark)
+  author: Chris Kempson
+  primary:
+    background: "#0c0d0e"
+    foreground: "#b7b8b9"
+  cursor:
+    text: "#0c0d0e"
+    cursor: "#b7b8b9"
+  normal:
+    black: "#0c0d0e"
+    red: "#e31a1c"
+    green: "#31a354"
+    yellow: "#dca060"
+    blue: "#3182bd"
+    magenta: "#756bb1"
+    cyan: "#80b1d3"
+    white: "#b7b8b9"
+  bright:
+    black: "#737475"
+    red: "#e31a1c"
+    green: "#31a354"
+    yellow: "#dca060"
+    blue: "#3182bd"
+    magenta: "#756bb1"
+    cyan: "#80b1d3"
+    white: "#fcfdfe"
+theme: Brewer.dark
